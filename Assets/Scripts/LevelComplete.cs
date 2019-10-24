@@ -7,6 +7,7 @@ public class LevelComplete : MonoBehaviour
 {
     public void LoadNextLevel()
     {
+        //once end of level trigger is hit, this moves the scene forward 1
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

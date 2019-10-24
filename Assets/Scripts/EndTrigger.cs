@@ -6,6 +6,7 @@ public class EndTrigger : MonoBehaviour
     
     void OnTriggerEnter ()
     {
+        //tells game manager that the level trigger has been reached.
         gameManager.CompleteLevel();
     }
 }

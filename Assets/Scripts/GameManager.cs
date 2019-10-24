@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     
     public void EndGame()
     {
+        //looks for "death" of the character and restarts the level if death is true. 
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
         
     }
 
+    //method that actually restarts the level on collision or falling off the platform
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

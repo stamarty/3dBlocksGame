@@ -8,6 +8,7 @@ public class PlayerCollision : MonoBehaviour
     
     private void OnCollisionEnter(Collision collisionInfo)
     {
+        //checks for collision with blocks and triggers "death" if true.
         if (collisionInfo.collider.tag == "Obstacle")
         {
             movement.enabled = false;
